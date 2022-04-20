@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEBAC14D28109B4700D8FB03 /* Gymando_taskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */; };
+		CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14E28109B4700D8FB03 /* ContentView.swift */; };
+		CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15028109B4900D8FB03 /* Assets.xcassets */; };
+		CEBAC15428109B4900D8FB03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */; };
+		CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */; };
+		CEBAC16828109B4A00D8FB03 /* Gymando_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */; };
+		CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEBAC15A28109B4900D8FB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBAC14128109B4700D8FB03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBAC14828109B4700D8FB03;
+			remoteInfo = "Gymando-task";
+		};
+		CEBAC16428109B4900D8FB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEBAC14128109B4700D8FB03 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEBAC14828109B4700D8FB03;
+			remoteInfo = "Gymando-task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEBAC14928109B4700D8FB03 /* Gymando-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymando-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskApp.swift; sourceTree = "<group>"; };
+		CEBAC14E28109B4700D8FB03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEBAC15028109B4900D8FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEBAC15928109B4900D8FB03 /* Gymando-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskTests.swift; sourceTree = "<group>"; };
+		CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITests.swift; sourceTree = "<group>"; };
+		CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEBAC14628109B4700D8FB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC15628109B4900D8FB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC16028109B4900D8FB03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEBAC14028109B4700D8FB03 = {
+			isa = PBXGroup;
+			children = (
+				CEBAC14B28109B4700D8FB03 /* Gymando-task */,
+				CEBAC15C28109B4900D8FB03 /* Gymando-taskTests */,
+				CEBAC16628109B4A00D8FB03 /* Gymando-taskUITests */,
+				CEBAC14A28109B4700D8FB03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEBAC14A28109B4700D8FB03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC14928109B4700D8FB03 /* Gymando-task.app */,
+				CEBAC15928109B4900D8FB03 /* Gymando-taskTests.xctest */,
+				CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEBAC14B28109B4700D8FB03 /* Gymando-task */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */,
+				CEBAC14E28109B4700D8FB03 /* ContentView.swift */,
+				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
+				CEBAC15228109B4900D8FB03 /* Preview Content */,
+			);
+			path = "Gymando-task";
+			sourceTree = "<group>";
+		};
+		CEBAC15228109B4900D8FB03 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEBAC15C28109B4900D8FB03 /* Gymando-taskTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */,
+			);
+			path = "Gymando-taskTests";
+			sourceTree = "<group>";
+		};
+		CEBAC16628109B4A00D8FB03 /* Gymando-taskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */,
+				CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */,
+			);
+			path = "Gymando-taskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEBAC14828109B4700D8FB03 /* Gymando-task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBAC16D28109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-task" */;
+			buildPhases = (
+				CEBAC14528109B4700D8FB03 /* Sources */,
+				CEBAC14628109B4700D8FB03 /* Frameworks */,
+				CEBAC14728109B4700D8FB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gymando-task";
+			productName = "Gymando-task";
+			productReference = CEBAC14928109B4700D8FB03 /* Gymando-task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEBAC15828109B4900D8FB03 /* Gymando-taskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBAC17028109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-taskTests" */;
+			buildPhases = (
+				CEBAC15528109B4900D8FB03 /* Sources */,
+				CEBAC15628109B4900D8FB03 /* Frameworks */,
+				CEBAC15728109B4900D8FB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBAC15B28109B4900D8FB03 /* PBXTargetDependency */,
+			);
+			name = "Gymando-taskTests";
+			productName = "Gymando-taskTests";
+			productReference = CEBAC15928109B4900D8FB03 /* Gymando-taskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEBAC16228109B4900D8FB03 /* Gymando-taskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBAC17328109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-taskUITests" */;
+			buildPhases = (
+				CEBAC15F28109B4900D8FB03 /* Sources */,
+				CEBAC16028109B4900D8FB03 /* Frameworks */,
+				CEBAC16128109B4900D8FB03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEBAC16528109B4900D8FB03 /* PBXTargetDependency */,
+			);
+			name = "Gymando-taskUITests";
+			productName = "Gymando-taskUITests";
+			productReference = CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEBAC14128109B4700D8FB03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CEBAC14828109B4700D8FB03 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CEBAC15828109B4900D8FB03 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CEBAC14828109B4700D8FB03;
+					};
+					CEBAC16228109B4900D8FB03 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CEBAC14828109B4700D8FB03;
+					};
+				};
+			};
+			buildConfigurationList = CEBAC14428109B4700D8FB03 /* Build configuration list for PBXProject "Gymando-task" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEBAC14028109B4700D8FB03;
+			productRefGroup = CEBAC14A28109B4700D8FB03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEBAC14828109B4700D8FB03 /* Gymando-task */,
+				CEBAC15828109B4900D8FB03 /* Gymando-taskTests */,
+				CEBAC16228109B4900D8FB03 /* Gymando-taskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEBAC14728109B4700D8FB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBAC15428109B4900D8FB03 /* Preview Assets.xcassets in Resources */,
+				CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC15728109B4900D8FB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC16128109B4900D8FB03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEBAC14528109B4700D8FB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */,
+				CEBAC14D28109B4700D8FB03 /* Gymando_taskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC15528109B4900D8FB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBAC15F28109B4900D8FB03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBAC16828109B4A00D8FB03 /* Gymando_taskUITests.swift in Sources */,
+				CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEBAC15B28109B4900D8FB03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBAC14828109B4700D8FB03 /* Gymando-task */;
+			targetProxy = CEBAC15A28109B4900D8FB03 /* PBXContainerItemProxy */;
+		};
+		CEBAC16528109B4900D8FB03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEBAC14828109B4700D8FB03 /* Gymando-task */;
+			targetProxy = CEBAC16428109B4900D8FB03 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEBAC16B28109B4A00D8FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEBAC16C28109B4A00D8FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEBAC16E28109B4A00D8FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEBAC16F28109B4A00D8FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEBAC17128109B4A00D8FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymando-task.app/Gymando-task";
+			};
+			name = Debug;
+		};
+		CEBAC17228109B4A00D8FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-taskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymando-task.app/Gymando-task";
+			};
+			name = Release;
+		};
+		CEBAC17428109B4A00D8FB03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gymando-task";
+			};
+			name = Debug;
+		};
+		CEBAC17528109B4A00D8FB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.task.gymando.Gymando-taskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gymando-task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEBAC14428109B4700D8FB03 /* Build configuration list for PBXProject "Gymando-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBAC16B28109B4A00D8FB03 /* Debug */,
+				CEBAC16C28109B4A00D8FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBAC16D28109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBAC16E28109B4A00D8FB03 /* Debug */,
+				CEBAC16F28109B4A00D8FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBAC17028109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-taskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBAC17128109B4A00D8FB03 /* Debug */,
+				CEBAC17228109B4A00D8FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBAC17328109B4A00D8FB03 /* Build configuration list for PBXNativeTarget "Gymando-taskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEBAC17428109B4A00D8FB03 /* Debug */,
+				CEBAC17528109B4A00D8FB03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEBAC14128109B4700D8FB03 /* Project object */;
+}
