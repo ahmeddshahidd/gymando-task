@@ -29,6 +29,7 @@ enum ExcerciseRouter {
     }
     
     func asURLRequest() -> URLRequest {
+        
         var urlRequest = URLRequest(url: URL(string: urlString)!)
         urlRequest.httpMethod = "get"
         urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")

@@ -1,15 +1,14 @@
 //
-//  ExcerciseCell.swift
+//  VariationExcerciseCell.swift
 //  Gymando-task
 //
-//  Created by Ahmed Shahid on 20.04.22.
+//  Created by Ahmed Shahid on 21.04.22.
 //
 
 import SwiftUI
-import SDWebImage
 import SDWebImageSwiftUI
 
-struct ExcerciseCell: View {
+struct VariationExcerciseCell: View {
     
     let excercise: Excercise
     
@@ -20,7 +19,7 @@ struct ExcerciseCell: View {
                     .placeholder(SwiftUI.Image("placeholder_image"))
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 20, height: 20)
                     .padding()
             } else {
                 SwiftUI.Image("placeholder_image")
@@ -28,10 +27,9 @@ struct ExcerciseCell: View {
                     .scaledToFill()
                     .contentShape(Rectangle())
                     .clipped()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 20, height: 20)
                     .padding()
             }
-            
             Text(excercise.name)
                 .font(.body)
                 .padding()

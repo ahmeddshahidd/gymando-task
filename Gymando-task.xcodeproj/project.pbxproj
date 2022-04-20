@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14E28109B4700D8FB03 /* ContentView.swift */; };
 		CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15028109B4900D8FB03 /* Assets.xcassets */; };
-		CEBAC15428109B4900D8FB03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */; };
 		CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */; };
 		CEBAC16828109B4A00D8FB03 /* Gymando_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */; };
 		CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */; };
@@ -26,6 +25,12 @@
 		CEBAC19E2810B35400D8FB03 /* ExcerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC19D2810B35400D8FB03 /* ExcerciseCell.swift */; };
 		CEBAC1A12810B39B00D8FB03 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEBAC1A02810B39B00D8FB03 /* SDWebImageSwiftUI */; };
 		CEBAC1A32810B4C400D8FB03 /* ExcerciseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */; };
+		CEBAC1A62810BAD000D8FB03 /* ExcerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1A52810BAD000D8FB03 /* ExcerciseDetailView.swift */; };
+		CEBAC1A82810BADB00D8FB03 /* ExcerciseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1A72810BADB00D8FB03 /* ExcerciseDetailViewModel.swift */; };
+		CEBAC1AB2810BBB100D8FB03 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1AA2810BBB100D8FB03 /* ImageCarouselView.swift */; };
+		CEBAC1AD2810BBFD00D8FB03 /* EmptyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1AC2810BBFD00D8FB03 /* EmptyNavigationLink.swift */; };
+		CEBAC1B02810BC3200D8FB03 /* Binding+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1AF2810BC3200D8FB03 /* Binding+Utils.swift */; };
+		CEBAC1B22810BCB100D8FB03 /* VariationExcerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1B12810BCB100D8FB03 /* VariationExcerciseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +54,6 @@
 		CEBAC14928109B4700D8FB03 /* Gymando-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymando-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC14E28109B4700D8FB03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEBAC15028109B4900D8FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEBAC15928109B4900D8FB03 /* Gymando-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskTests.swift; sourceTree = "<group>"; };
 		CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,12 @@
 		CEBAC19B2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExcerciseUseCase.swift; sourceTree = "<group>"; };
 		CEBAC19D2810B35400D8FB03 /* ExcerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCell.swift; sourceTree = "<group>"; };
 		CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseRouter.swift; sourceTree = "<group>"; };
+		CEBAC1A52810BAD000D8FB03 /* ExcerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseDetailView.swift; sourceTree = "<group>"; };
+		CEBAC1A72810BADB00D8FB03 /* ExcerciseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseDetailViewModel.swift; sourceTree = "<group>"; };
+		CEBAC1AA2810BBB100D8FB03 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		CEBAC1AC2810BBFD00D8FB03 /* EmptyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNavigationLink.swift; sourceTree = "<group>"; };
+		CEBAC1AF2810BC3200D8FB03 /* Binding+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Utils.swift"; sourceTree = "<group>"; };
+		CEBAC1B12810BCB100D8FB03 /* VariationExcerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationExcerciseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,17 +134,8 @@
 				CEBAC1872810A49400D8FB03 /* Features */,
 				CEBAC17B28109EB800D8FB03 /* Info.plist */,
 				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
-				CEBAC15228109B4900D8FB03 /* Preview Content */,
 			);
 			path = "Gymando-task";
-			sourceTree = "<group>";
-		};
-		CEBAC15228109B4900D8FB03 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		CEBAC15C28109B4900D8FB03 /* Gymando-taskTests */ = {
@@ -167,7 +168,9 @@
 		CEBAC17E2810A0B400D8FB03 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CEBAC1A92810BB9B00D8FB03 /* View */,
 				CEBAC17F2810A0C100D8FB03 /* Network Provider */,
+				CEBAC1AE2810BC1400D8FB03 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 		CEBAC18A2810A52200D8FB03 /* Excercise */ = {
 			isa = PBXGroup;
 			children = (
+				CEBAC1A42810BAB400D8FB03 /* ExcerciseDetailView */,
 				CEBAC18D2810A7AF00D8FB03 /* ExcerciseListView */,
 				CEBAC18B2810A53500D8FB03 /* ExcerciseCoordinator.swift */,
 			);
@@ -250,6 +254,33 @@
 				CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEBAC1A42810BAB400D8FB03 /* ExcerciseDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1A52810BAD000D8FB03 /* ExcerciseDetailView.swift */,
+				CEBAC1A72810BADB00D8FB03 /* ExcerciseDetailViewModel.swift */,
+				CEBAC1B12810BCB100D8FB03 /* VariationExcerciseCell.swift */,
+			);
+			path = ExcerciseDetailView;
+			sourceTree = "<group>";
+		};
+		CEBAC1A92810BB9B00D8FB03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1AA2810BBB100D8FB03 /* ImageCarouselView.swift */,
+				CEBAC1AC2810BBFD00D8FB03 /* EmptyNavigationLink.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEBAC1AE2810BC1400D8FB03 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1AF2810BC3200D8FB03 /* Binding+Utils.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +393,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBAC15428109B4900D8FB03 /* Preview Assets.xcassets in Resources */,
 				CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC1AD2810BBFD00D8FB03 /* EmptyNavigationLink.swift in Sources */,
 				CEBAC18F2810A7C400D8FB03 /* ExcerciseListView.swift in Sources */,
 				CEBAC1952810A8C300D8FB03 /* Excercise.swift in Sources */,
 				CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */,
@@ -395,12 +426,17 @@
 				CEBAC1832810A11400D8FB03 /* NetworkClient.swift in Sources */,
 				CEBAC19E2810B35400D8FB03 /* ExcerciseCell.swift in Sources */,
 				CEBAC1992810A93C00D8FB03 /* ExcerciseUseCase.swift in Sources */,
+				CEBAC1A62810BAD000D8FB03 /* ExcerciseDetailView.swift in Sources */,
 				CEBAC18C2810A53500D8FB03 /* ExcerciseCoordinator.swift in Sources */,
 				CEBAC1812810A0E400D8FB03 /* NetworkProvider.swift in Sources */,
+				CEBAC1A82810BADB00D8FB03 /* ExcerciseDetailViewModel.swift in Sources */,
 				CEBAC19C2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift in Sources */,
 				CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */,
 				CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */,
+				CEBAC1AB2810BBB100D8FB03 /* ImageCarouselView.swift in Sources */,
 				CEBAC1A32810B4C400D8FB03 /* ExcerciseRouter.swift in Sources */,
+				CEBAC1B22810BCB100D8FB03 /* VariationExcerciseCell.swift in Sources */,
+				CEBAC1B02810BC3200D8FB03 /* Binding+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

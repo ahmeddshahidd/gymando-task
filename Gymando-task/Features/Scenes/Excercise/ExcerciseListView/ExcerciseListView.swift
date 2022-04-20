@@ -12,15 +12,16 @@ struct ExcerciseListView: View {
     let tapOnExcerciseAction: (Excercise) -> Void
     
     var body: some View {
-        List(viewModel.excercises.excercise) { excercise in
+        List(viewModel.excercisePage.excercise) { excercise in
             Button(action: {
                 tapOnExcerciseAction(excercise)
             }, label: {
-                ExcerciseCell(excercise: excercise, viewModel: viewModel)
+                ExcerciseCell(excercise: excercise)
             })
         }
         .onAppear {
             viewModel.getExcercises()
         }
+        
     }
 }

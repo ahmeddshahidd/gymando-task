@@ -27,6 +27,14 @@ struct Excercise: Codable, Identifiable {
     let images: [Image]?
     let variations: [Int]?
 
+    func getMainImage() -> String? {
+        if let images = self.images, images.count > 0 {
+            guard let index = images.firstIndex(where: { $0.isMain == true }) else { return nil }
+            return images[index].image
+        }
+        return nil
+    }
+    
 }
 
 // MARK: - Image
