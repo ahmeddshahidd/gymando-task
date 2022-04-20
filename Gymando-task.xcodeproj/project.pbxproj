@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEBAC14D28109B4700D8FB03 /* Gymando_taskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */; };
 		CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14E28109B4700D8FB03 /* ContentView.swift */; };
 		CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15028109B4900D8FB03 /* Assets.xcassets */; };
 		CEBAC15428109B4900D8FB03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */; };
 		CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */; };
 		CEBAC16828109B4A00D8FB03 /* Gymando_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */; };
 		CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */; };
+		CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17628109D7300D8FB03 /* AppDelegate.swift */; };
+		CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		CEBAC14928109B4700D8FB03 /* Gymando-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymando-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskApp.swift; sourceTree = "<group>"; };
 		CEBAC14E28109B4700D8FB03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEBAC15028109B4900D8FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBAC15328109B4900D8FB03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +44,9 @@
 		CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITests.swift; sourceTree = "<group>"; };
 		CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEBAC17628109D7300D8FB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEBAC17B28109EB800D8FB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +97,8 @@
 		CEBAC14B28109B4700D8FB03 /* Gymando-task */ = {
 			isa = PBXGroup;
 			children = (
-				CEBAC14C28109B4700D8FB03 /* Gymando_taskApp.swift */,
-				CEBAC14E28109B4700D8FB03 /* ContentView.swift */,
+				CEBAC17828109DC200D8FB03 /* App Setup */,
+				CEBAC17B28109EB800D8FB03 /* Info.plist */,
 				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
 				CEBAC15228109B4900D8FB03 /* Preview Content */,
 			);
@@ -125,6 +128,16 @@
 				CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */,
 			);
 			path = "Gymando-taskUITests";
+			sourceTree = "<group>";
+		};
+		CEBAC17828109DC200D8FB03 /* App Setup */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC17628109D7300D8FB03 /* AppDelegate.swift */,
+				CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */,
+				CEBAC14E28109B4700D8FB03 /* ContentView.swift */,
+			);
+			path = "App Setup";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */,
 				CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */,
-				CEBAC14D28109B4700D8FB03 /* Gymando_taskApp.swift in Sources */,
+				CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +435,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Gymando-task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +463,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Gymando-task/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
