@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Combine
+
 enum httpError : Error {
     case jsonDecoding
     case noData
@@ -16,7 +18,5 @@ enum httpError : Error {
 }
 
 protocol NetworkProvider {
-    func performOperation<T:Decodable>(request: URLRequest, response: T.Type,
-                                       completionHandler:
-                                       @escaping(T?, Error?)->Void)
+    func performOperation<T: Decodable>(request: URLRequest, response: T.Type) -> Future<T, Error>
 }

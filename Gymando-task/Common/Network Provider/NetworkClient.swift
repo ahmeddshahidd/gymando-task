@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import UIKit
+import Combine
 
 class NetworkClient: NetworkProvider {
     
@@ -14,35 +14,31 @@ class NetworkClient: NetworkProvider {
     
     private init() {}
     
-    func performOperation<T:Decodable>(request: URLRequest, response: T.Type,
-                                       completionHandler:
-                                       @escaping(T?, Error?)->Void) {
-
-        URLSession.shared.dataTask(with: request) { serverData, serverResponse, serverError in
-
-            // check for error
-            guard serverError == nil else { return completionHandler(nil,httpError.serverError) }
-
-            // check for success staus code
-            guard let httpStausCode = (serverResponse as? HTTPURLResponse)?.statusCode,
-                  (200...299).contains(httpStausCode) else {
-                      return completionHandler(nil, httpError.nonSuccessStatusCode)
-                  }
-
-            // check if serverData is not empty
-            guard serverData?.isEmpty == false else {
-                return completionHandler(nil,httpError.noData)
-
+    private var cancellables = Set<AnyCancellable>()
+    
+    func performOperation<T: Decodable>(request: URLRequest, response: T.Type) -> Future<T, Error> {
+            return Future<T, Error> { [weak self] promise in
+                URLSession.shared.dataTaskPublisher(for: request)
+                    .tryMap { (data, response) -> Data in
+                        guard let httpResponse = response as? HTTPURLResponse, 200...299 ~= httpResponse.statusCode else {
+                            throw httpError.nonSuccessStatusCode
+                        }
+                        return data
+                    }
+                    .decode(type: T.self, decoder: JSONDecoder())
+                    .receive(on: RunLoop.main)
+                    .sink(receiveCompletion: { (completion) in
+                        if case let .failure(error) = completion {
+                            switch error {
+                            case let decodingError as DecodingError:
+                                promise(.failure(decodingError))
+                            case let apiError as httpError:
+                                promise(.failure(apiError))
+                            default:
+                                promise(.failure(httpError.serverError))
+                            }
+                        }
+                    }, receiveValue: { promise(.success($0)) })
+                    .store(in: &self!.cancellables)
             }
-
-            // decode the result
-            do {
-                let result = try JSONDecoder().decode(response.self, from: serverData!)
-                completionHandler(result,nil) // return success
-            }catch {
-                // return decode error
-                completionHandler(nil,error)
-            }
-        }.resume()
-    }
-}
+        }}

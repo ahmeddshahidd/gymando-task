@@ -17,6 +17,15 @@
 		CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */; };
 		CEBAC1812810A0E400D8FB03 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1802810A0E400D8FB03 /* NetworkProvider.swift */; };
 		CEBAC1832810A11400D8FB03 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1822810A11400D8FB03 /* NetworkClient.swift */; };
+		CEBAC18C2810A53500D8FB03 /* ExcerciseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC18B2810A53500D8FB03 /* ExcerciseCoordinator.swift */; };
+		CEBAC18F2810A7C400D8FB03 /* ExcerciseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC18E2810A7C400D8FB03 /* ExcerciseListView.swift */; };
+		CEBAC1912810A7DC00D8FB03 /* ExcerciseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1902810A7DC00D8FB03 /* ExcerciseListViewModel.swift */; };
+		CEBAC1952810A8C300D8FB03 /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1942810A8C300D8FB03 /* Excercise.swift */; };
+		CEBAC1992810A93C00D8FB03 /* ExcerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1982810A93C00D8FB03 /* ExcerciseUseCase.swift */; };
+		CEBAC19C2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC19B2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift */; };
+		CEBAC19E2810B35400D8FB03 /* ExcerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC19D2810B35400D8FB03 /* ExcerciseCell.swift */; };
+		CEBAC1A12810B39B00D8FB03 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEBAC1A02810B39B00D8FB03 /* SDWebImageSwiftUI */; };
+		CEBAC1A32810B4C400D8FB03 /* ExcerciseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,14 @@
 		CEBAC17B28109EB800D8FB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CEBAC1802810A0E400D8FB03 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		CEBAC1822810A11400D8FB03 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CEBAC18B2810A53500D8FB03 /* ExcerciseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCoordinator.swift; sourceTree = "<group>"; };
+		CEBAC18E2810A7C400D8FB03 /* ExcerciseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseListView.swift; sourceTree = "<group>"; };
+		CEBAC1902810A7DC00D8FB03 /* ExcerciseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseListViewModel.swift; sourceTree = "<group>"; };
+		CEBAC1942810A8C300D8FB03 /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
+		CEBAC1982810A93C00D8FB03 /* ExcerciseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseUseCase.swift; sourceTree = "<group>"; };
+		CEBAC19B2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExcerciseUseCase.swift; sourceTree = "<group>"; };
+		CEBAC19D2810B35400D8FB03 /* ExcerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseCell.swift; sourceTree = "<group>"; };
+		CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC1A12810B39B00D8FB03 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +121,7 @@
 			children = (
 				CEBAC17828109DC200D8FB03 /* App Setup */,
 				CEBAC17E2810A0B400D8FB03 /* Common */,
+				CEBAC1872810A49400D8FB03 /* Features */,
 				CEBAC17B28109EB800D8FB03 /* Info.plist */,
 				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
 				CEBAC15228109B4900D8FB03 /* Preview Content */,
@@ -162,6 +181,77 @@
 			path = "Network Provider";
 			sourceTree = "<group>";
 		};
+		CEBAC1872810A49400D8FB03 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1882810A50800D8FB03 /* DataProvider */,
+				CEBAC1892810A51600D8FB03 /* Scenes */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CEBAC1882810A50800D8FB03 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1962810A8F700D8FB03 /* UseCase */,
+				CEBAC19A2810B14B00D8FB03 /* Networking */,
+				CEBAC1922810A86F00D8FB03 /* Entites */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		CEBAC1892810A51600D8FB03 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC18A2810A52200D8FB03 /* Excercise */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CEBAC18A2810A52200D8FB03 /* Excercise */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC18D2810A7AF00D8FB03 /* ExcerciseListView */,
+				CEBAC18B2810A53500D8FB03 /* ExcerciseCoordinator.swift */,
+			);
+			path = Excercise;
+			sourceTree = "<group>";
+		};
+		CEBAC18D2810A7AF00D8FB03 /* ExcerciseListView */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC18E2810A7C400D8FB03 /* ExcerciseListView.swift */,
+				CEBAC1902810A7DC00D8FB03 /* ExcerciseListViewModel.swift */,
+				CEBAC19D2810B35400D8FB03 /* ExcerciseCell.swift */,
+			);
+			path = ExcerciseListView;
+			sourceTree = "<group>";
+		};
+		CEBAC1922810A86F00D8FB03 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1942810A8C300D8FB03 /* Excercise.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
+		CEBAC1962810A8F700D8FB03 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1982810A93C00D8FB03 /* ExcerciseUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		CEBAC19A2810B14B00D8FB03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC19B2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift */,
+				CEBAC1A22810B4C400D8FB03 /* ExcerciseRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +268,9 @@
 			dependencies = (
 			);
 			name = "Gymando-task";
+			packageProductDependencies = (
+				CEBAC1A02810B39B00D8FB03 /* SDWebImageSwiftUI */,
+			);
 			productName = "Gymando-task";
 			productReference = CEBAC14928109B4700D8FB03 /* Gymando-task.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +343,9 @@
 				Base,
 			);
 			mainGroup = CEBAC14028109B4700D8FB03;
+			packageReferences = (
+				CEBAC19F2810B39B00D8FB03 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = CEBAC14A28109B4700D8FB03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,11 +388,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC18F2810A7C400D8FB03 /* ExcerciseListView.swift in Sources */,
+				CEBAC1952810A8C300D8FB03 /* Excercise.swift in Sources */,
 				CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */,
+				CEBAC1912810A7DC00D8FB03 /* ExcerciseListViewModel.swift in Sources */,
 				CEBAC1832810A11400D8FB03 /* NetworkClient.swift in Sources */,
+				CEBAC19E2810B35400D8FB03 /* ExcerciseCell.swift in Sources */,
+				CEBAC1992810A93C00D8FB03 /* ExcerciseUseCase.swift in Sources */,
+				CEBAC18C2810A53500D8FB03 /* ExcerciseCoordinator.swift in Sources */,
 				CEBAC1812810A0E400D8FB03 /* NetworkProvider.swift in Sources */,
+				CEBAC19C2810B16D00D8FB03 /* NetworkExcerciseUseCase.swift in Sources */,
 				CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */,
 				CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */,
+				CEBAC1A32810B4C400D8FB03 /* ExcerciseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +741,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEBAC19F2810B39B00D8FB03 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEBAC1A02810B39B00D8FB03 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEBAC19F2810B39B00D8FB03 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEBAC14128109B4700D8FB03 /* Project object */;
 }
