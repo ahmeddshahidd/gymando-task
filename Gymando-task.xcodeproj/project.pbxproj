@@ -15,6 +15,8 @@
 		CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */; };
 		CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17628109D7300D8FB03 /* AppDelegate.swift */; };
 		CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */; };
+		CEBAC1812810A0E400D8FB03 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1802810A0E400D8FB03 /* NetworkProvider.swift */; };
+		CEBAC1832810A11400D8FB03 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1822810A11400D8FB03 /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CEBAC17628109D7300D8FB03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEBAC17928109DE000D8FB03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEBAC17B28109EB800D8FB03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEBAC1802810A0E400D8FB03 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		CEBAC1822810A11400D8FB03 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CEBAC17828109DC200D8FB03 /* App Setup */,
+				CEBAC17E2810A0B400D8FB03 /* Common */,
 				CEBAC17B28109EB800D8FB03 /* Info.plist */,
 				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
 				CEBAC15228109B4900D8FB03 /* Preview Content */,
@@ -138,6 +143,23 @@
 				CEBAC14E28109B4700D8FB03 /* ContentView.swift */,
 			);
 			path = "App Setup";
+			sourceTree = "<group>";
+		};
+		CEBAC17E2810A0B400D8FB03 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC17F2810A0C100D8FB03 /* Network Provider */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CEBAC17F2810A0C100D8FB03 /* Network Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1802810A0E400D8FB03 /* NetworkProvider.swift */,
+				CEBAC1822810A11400D8FB03 /* NetworkClient.swift */,
+			);
+			path = "Network Provider";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */,
+				CEBAC1832810A11400D8FB03 /* NetworkClient.swift in Sources */,
+				CEBAC1812810A0E400D8FB03 /* NetworkProvider.swift in Sources */,
 				CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */,
 				CEBAC17A28109DE000D8FB03 /* SceneDelegate.swift in Sources */,
 			);
