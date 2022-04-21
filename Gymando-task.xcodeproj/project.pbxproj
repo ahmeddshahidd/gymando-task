@@ -31,6 +31,10 @@
 		CEBAC1AD2810BBFD00D8FB03 /* EmptyNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1AC2810BBFD00D8FB03 /* EmptyNavigationLink.swift */; };
 		CEBAC1B02810BC3200D8FB03 /* Binding+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1AF2810BC3200D8FB03 /* Binding+Utils.swift */; };
 		CEBAC1B22810BCB100D8FB03 /* VariationExcerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1B12810BCB100D8FB03 /* VariationExcerciseCell.swift */; };
+		CEBAC1B42810D1F400D8FB03 /* excercisePage.json in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC1B32810D1F300D8FB03 /* excercisePage.json */; };
+		CEBAC1B92810D24F00D8FB03 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1B82810D24F00D8FB03 /* MockNetworkClient.swift */; };
+		CEBAC1BB2810D3D000D8FB03 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC1BA2810D3D000D8FB03 /* TestUtils.swift */; };
+		CEBAC1BD2810D75200D8FB03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC1BC2810D75200D8FB03 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,10 @@
 		CEBAC1AC2810BBFD00D8FB03 /* EmptyNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNavigationLink.swift; sourceTree = "<group>"; };
 		CEBAC1AF2810BC3200D8FB03 /* Binding+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Utils.swift"; sourceTree = "<group>"; };
 		CEBAC1B12810BCB100D8FB03 /* VariationExcerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationExcerciseCell.swift; sourceTree = "<group>"; };
+		CEBAC1B32810D1F300D8FB03 /* excercisePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = excercisePage.json; sourceTree = "<group>"; };
+		CEBAC1B82810D24F00D8FB03 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		CEBAC1BA2810D3D000D8FB03 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		CEBAC1BC2810D75200D8FB03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 				CEBAC1872810A49400D8FB03 /* Features */,
 				CEBAC17B28109EB800D8FB03 /* Info.plist */,
 				CEBAC15028109B4900D8FB03 /* Assets.xcassets */,
+				CEBAC1BC2810D75200D8FB03 /* Preview Assets.xcassets */,
 			);
 			path = "Gymando-task";
 			sourceTree = "<group>";
@@ -141,7 +150,10 @@
 		CEBAC15C28109B4900D8FB03 /* Gymando-taskTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEBAC1B62810D21E00D8FB03 /* Networking */,
+				CEBAC1B52810D20300D8FB03 /* MockData */,
 				CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */,
+				CEBAC1BA2810D3D000D8FB03 /* TestUtils.swift */,
 			);
 			path = "Gymando-taskTests";
 			sourceTree = "<group>";
@@ -283,6 +295,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CEBAC1B52810D20300D8FB03 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1B32810D1F300D8FB03 /* excercisePage.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		CEBAC1B62810D21E00D8FB03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1B82810D24F00D8FB03 /* MockNetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -393,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC1BD2810D75200D8FB03 /* Preview Assets.xcassets in Resources */,
 				CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBAC1B42810D1F400D8FB03 /* excercisePage.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +475,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */,
+				CEBAC1BB2810D3D000D8FB03 /* TestUtils.swift in Sources */,
+				CEBAC1B92810D24F00D8FB03 /* MockNetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +628,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Gymando-task/Info.plist";
@@ -624,7 +656,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Gymando-task/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Gymando-task/Info.plist";

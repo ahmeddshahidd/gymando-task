@@ -6,28 +6,29 @@
 //
 
 import XCTest
+import Combine
 @testable import Gymando_task
 
 class Gymando_taskTests: XCTestCase {
+    
+    // An example of network provider testing
+    func testExcerciseNetworkProviderGetExcercisePage() {
+        let exp = expectation(description: "Parse repos success")
+        var subscriptions = Set<AnyCancellable>()
+        
+        let networkClient = TestUtils.mockNetworkClient(file: "excercisePage.json")
+        let excerciseUseCase = NetworkExcerciseUseCase()
+        excerciseUseCase.networkClient = networkClient
+        
+        excerciseUseCase.getExcerciseList().sink { _ in } receiveValue: { excercisePage in
+            let firstExcercise = excercisePage.excercise.first
+            let isCorrectParsing = firstExcercise?.id != nil && firstExcercise?.name != nil
+            
+            XCTAssert(isCorrectParsing)
+            
+            exp.fulfill()
+        }.store(in: &subscriptions)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        wait(for: [exp], timeout: 0.5)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
