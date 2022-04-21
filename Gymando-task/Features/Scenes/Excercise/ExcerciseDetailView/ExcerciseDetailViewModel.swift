@@ -34,6 +34,7 @@ class ExcerciseDetailViewModel: ObservableObject {
         $excercise.map({$0?.name}).assign(to: &$excerciseName)
     }
     
+    ///
     private func fetchVariations() {
         guard let variations = self.excercise?.variations else { return }
         let group = DispatchGroup()

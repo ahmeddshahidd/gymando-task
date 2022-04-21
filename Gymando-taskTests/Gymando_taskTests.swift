@@ -31,4 +31,19 @@ class Gymando_taskTests: XCTestCase {
 
         wait(for: [exp], timeout: 0.5)
     }
+    
+//    // An example of view model testing
+//    func testForkedRepoTextInRepoDetailsViewModel() {
+//        
+//        var repo = Repo()
+//        
+//        var sourceRepo = Repo()
+//        sourceRepo.fullName = "sourceOwnerName/SourceRepo"
+//        repo.source = Container(value: sourceRepo)
+//        
+//        let viewModel = RepoDetailsViewModel()
+//        viewModel.repo = repo
+//        XCTAssertEqual(viewModel.forkText, "Forked from \(sourceRepo.fullName ?? "")")
+//    }
+    
 }
