@@ -10,9 +10,10 @@
 		3CC0033C28116DEA007A3548 /* NetworkExcerciseUseCase_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0033B28116DEA007A3548 /* NetworkExcerciseUseCase_Tests.swift */; };
 		3CC0033F28116FA2007A3548 /* MockNetworkExcerciseUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0033E28116FA2007A3548 /* MockNetworkExcerciseUseCase.swift */; };
 		3CC00341281171DC007A3548 /* excercise.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CC00340281171DC007A3548 /* excercise.json */; };
+		3CC0034328117397007A3548 /* ExcerciseListViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0034228117397007A3548 /* ExcerciseListViewModel_Test.swift */; };
 		CEBAC14F28109B4700D8FB03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC14E28109B4700D8FB03 /* ContentView.swift */; };
 		CEBAC15128109B4900D8FB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBAC15028109B4900D8FB03 /* Assets.xcassets */; };
-		CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */; };
+		CEBAC15E28109B4900D8FB03 /* ExcerciseNetworkProvider_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC15D28109B4900D8FB03 /* ExcerciseNetworkProvider_Tests.swift */; };
 		CEBAC16828109B4A00D8FB03 /* Gymando_taskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */; };
 		CEBAC16A28109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */; };
 		CEBAC17728109D7300D8FB03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBAC17628109D7300D8FB03 /* AppDelegate.swift */; };
@@ -61,11 +62,12 @@
 		3CC0033B28116DEA007A3548 /* NetworkExcerciseUseCase_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExcerciseUseCase_Tests.swift; sourceTree = "<group>"; };
 		3CC0033E28116FA2007A3548 /* MockNetworkExcerciseUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkExcerciseUseCase.swift; sourceTree = "<group>"; };
 		3CC00340281171DC007A3548 /* excercise.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = excercise.json; sourceTree = "<group>"; };
+		3CC0034228117397007A3548 /* ExcerciseListViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseListViewModel_Test.swift; sourceTree = "<group>"; };
 		CEBAC14928109B4700D8FB03 /* Gymando-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymando-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC14E28109B4700D8FB03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEBAC15028109B4900D8FB03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBAC15928109B4900D8FB03 /* Gymando-taskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskTests.swift; sourceTree = "<group>"; };
+		CEBAC15D28109B4900D8FB03 /* ExcerciseNetworkProvider_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseNetworkProvider_Tests.swift; sourceTree = "<group>"; };
 		CEBAC16328109B4900D8FB03 /* Gymando-taskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymando-taskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAC16728109B4A00D8FB03 /* Gymando_taskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITests.swift; sourceTree = "<group>"; };
 		CEBAC16928109B4A00D8FB03 /* Gymando_taskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymando_taskUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC0033B28116DEA007A3548 /* NetworkExcerciseUseCase_Tests.swift */,
+				3CC0034228117397007A3548 /* ExcerciseListViewModel_Test.swift */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -131,19 +134,11 @@
 		3CC0033928116DAC007A3548 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3CC00344281175F1007A3548 /* Util */,
 				CEBAC1B62810D21E00D8FB03 /* Networking */,
 				CEBAC1B52810D20300D8FB03 /* MockData */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		3CC0033A28116DB8007A3548 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-				3CC0033D28116F8E007A3548 /* DataProvider */,
-				3CC0033828116DA1007A3548 /* Excercise */,
-			);
-			path = Feature;
 			sourceTree = "<group>";
 		};
 		3CC0033D28116F8E007A3548 /* DataProvider */ = {
@@ -152,6 +147,32 @@
 				3CC0033E28116FA2007A3548 /* MockNetworkExcerciseUseCase.swift */,
 			);
 			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		3CC00344281175F1007A3548 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC1BA2810D3D000D8FB03 /* TestUtils.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3CC0034528117607007A3548 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				3CC0033D28116F8E007A3548 /* DataProvider */,
+				3CC0033828116DA1007A3548 /* Excercise */,
+				3CC0034628117635007A3548 /* Network */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		3CC0034628117635007A3548 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CEBAC15D28109B4900D8FB03 /* ExcerciseNetworkProvider_Tests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		CEBAC14028109B4700D8FB03 = {
@@ -190,10 +211,8 @@
 		CEBAC15C28109B4900D8FB03 /* Gymando-taskTests */ = {
 			isa = PBXGroup;
 			children = (
+				3CC0034528117607007A3548 /* Test */,
 				3CC0033928116DAC007A3548 /* Common */,
-				3CC0033A28116DB8007A3548 /* Feature */,
-				CEBAC15D28109B4900D8FB03 /* Gymando_taskTests.swift */,
-				CEBAC1BA2810D3D000D8FB03 /* TestUtils.swift */,
 			);
 			path = "Gymando-taskTests";
 			sourceTree = "<group>";
@@ -516,8 +535,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBAC15E28109B4900D8FB03 /* Gymando_taskTests.swift in Sources */,
+				CEBAC15E28109B4900D8FB03 /* ExcerciseNetworkProvider_Tests.swift in Sources */,
 				3CC0033F28116FA2007A3548 /* MockNetworkExcerciseUseCase.swift in Sources */,
+				3CC0034328117397007A3548 /* ExcerciseListViewModel_Test.swift in Sources */,
 				CEBAC1BB2810D3D000D8FB03 /* TestUtils.swift in Sources */,
 				3CC0033C28116DEA007A3548 /* NetworkExcerciseUseCase_Tests.swift in Sources */,
 				CEBAC1B92810D24F00D8FB03 /* MockNetworkClient.swift in Sources */,

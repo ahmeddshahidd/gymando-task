@@ -11,7 +11,11 @@ import Combine
 @testable import Gymando_task
 
 final class MockNetworkExcerciseUseCase {
-    var networkClient: NetworkProvider = TestUtils.mockNetworkClient(file: "excercisePage.json")
+    var networkClient: NetworkProvider
+    
+    init(networkProvider: NetworkProvider) {
+        networkClient = networkProvider
+    }
 }
 
 extension MockNetworkExcerciseUseCase: ExcerciseUseCase {

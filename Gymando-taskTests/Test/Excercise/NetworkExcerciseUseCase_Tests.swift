@@ -6,13 +6,16 @@
 //
 
 import XCTest
+import Combine
+
 @testable import Gymando_task
 
 class NetworkExcerciseUseCase_Tests: XCTestCase {
     
     func testNetworkExcerciseUseCaseGetExcercisePage() {
          
-        let networkUseCase = MockNetworkExcerciseUseCase()
+        let networkUseCase = MockNetworkExcerciseUseCase(networkProvider: TestUtils.mockNetworkClient(file: "excercisePage.json"))
+        var subscriptions = Set<AnyCancellable>()
         let expectation = self.expectation(description: "GetExcercisePage")
         
         networkUseCase.getExcerciseList().sink { _ in } receiveValue: { excercisePage in
@@ -20,15 +23,15 @@ class NetworkExcerciseUseCase_Tests: XCTestCase {
             XCTAssertNotNil(excercisePage)
             XCTAssertEqual(excercisePage.excercise.count, 20)
             expectation.fulfill()
-        }
+        }.store(in: &subscriptions)
+        
         wait(for: [expectation], timeout: 0.5)
     }
     
     func testNetworkExcerciseUseCaseGetExcercise() {
          
-        let networkUseCase = MockNetworkExcerciseUseCase()
-        networkUseCase.networkClient = TestUtils.mockNetworkClient(file: "excercise.json")
-        
+        let networkUseCase = MockNetworkExcerciseUseCase(networkProvider: TestUtils.mockNetworkClient(file: "excercise.json"))
+        var subscriptions = Set<AnyCancellable>()
         let expectation = self.expectation(description: "GetExcercise")
         
         networkUseCase.getExcercise(with: 5).sink(receiveCompletion: { _ in }) { excercise in
@@ -40,7 +43,7 @@ class NetworkExcerciseUseCase_Tests: XCTestCase {
             XCTAssertEqual(excercise.getMainImage(), "https://wger.de/media/exercise-images/113/Walking-lunges-1.png")
             XCTAssertEqual(excercise.name, "Ausfallschritte im Gehen")
             expectation.fulfill()
-        }
+        }.store(in: &subscriptions)
         
         wait(for: [expectation], timeout: 0.5)
     }

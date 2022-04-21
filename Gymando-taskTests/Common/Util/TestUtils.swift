@@ -17,4 +17,10 @@ class TestUtils {
         let data = loadData(file: file)
         return MockNetworkClient(response: (data, nil))
     }
+    
+    static func MockModel<T: Decodable >(_ file: String, of type: T.Type) throws -> T {
+        let data = loadData(file: file)
+        return try JSONDecoder().decode(T.self, from: data!)
+    }
+    
 }
